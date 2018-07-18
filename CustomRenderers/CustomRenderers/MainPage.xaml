@@ -3,12 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CustomRenderers"
              x:Class="CustomRenderers.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+            <local:RoundedEntryView Placeholder="Username" Image="user"/>
+            <local:RoundedEntryView Placeholder="Password" Image="password" IsPassword="True"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
