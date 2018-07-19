@@ -12,6 +12,13 @@ namespace CustomRenderers
 		public MainPage()
 		{
 			InitializeComponent();
+
+            mySlider.StoppedDragging += MySlider_StoppedDragging;
 		}
+
+        public void MySlider_StoppedDragging(object sender, EventArgs e)
+        {
+            DisplayAlert("Alert", "Stopped Dragging", "OK");
+        }
 	}
 }

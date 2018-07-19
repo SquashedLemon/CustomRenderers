@@ -33,14 +33,12 @@ namespace CustomRenderers.Droid.Renderers
             if (this.Control != null && Element != null)
             {
                 System.Diagnostics.Debug.WriteLine(">  Control Found: " + Element.Value + "   " + Control.Progress);
+
             }
 
             if (this.Control != null)
             {
-                var slider = (CustomSlider)_E.NewElement;
-                Control.Max = (int)(slider.Maximum - slider.Minimum);
-                Control.Progress = (int)(slider.Value - slider.Minimum);
-                Control.StopTrackingTouch += Control_StopTrackingTouch;
+                
             }
 
             if (this.Control == null)
@@ -71,6 +69,11 @@ namespace CustomRenderers.Droid.Renderers
 
                 System.Diagnostics.Debug.WriteLine(">  New Element: " + Element.Value);
                 _E.NewElement.PropertyChanged += ElementOnPropertyChanged;
+
+                var slider = (CustomSlider)_E.NewElement;
+                Control.Max = (int)(slider.Maximum - slider.Minimum);
+                Control.Progress = (int)(slider.Value - slider.Minimum);
+                Control.StopTrackingTouch += Control_StopTrackingTouch;
             }
         }
 
