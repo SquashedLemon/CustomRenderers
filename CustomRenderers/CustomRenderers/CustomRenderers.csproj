@@ -7,4 +7,19 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.2.0.637442-pre1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="MyControls\MaterialDatePicker.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MyControls\MaterialEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MyControls\MaterialPicker.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MyControls\MaterialTimePicker.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

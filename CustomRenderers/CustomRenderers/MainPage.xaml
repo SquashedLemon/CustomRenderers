@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:CustomRenderers"
+             xmlns:local="clr-namespace:CustomRenderers;assembly=CustomRenderers"
+             xmlns:custom="clr-namespace:CustomRenderers.Custom_Controls"
+             xmlns:view="clr-namespace:CustomRenderers.MyControls"
              x:Class="CustomRenderers.MainPage">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="20">
-            <local:RoundedEntryView Placeholder="Username" Image="user"/>
-            <local:RoundedEntryView Placeholder="Password" Image="password" IsPassword="True"/>
+        <StackLayout Padding="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <custom:CustomSlider VerticalOptions="FillAndExpand" x:Name="mySlider"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

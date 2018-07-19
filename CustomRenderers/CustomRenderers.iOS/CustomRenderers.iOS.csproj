@@ -162,4 +162,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\user.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\backgroundgreen.jpg" />
+  </ItemGroup>
 </Project>
